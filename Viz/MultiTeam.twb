@@ -1,0 +1,1447 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0114.0916                               -->
+<workbook original-version='18.1' source-build='2020.4.1 (20204.21.0114.0916)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='MatchesCups - Copia' inline='true' name='federated.1snuspl1qcl25q183ap910uof80g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MatchesCups - Copia' name='textscan.0zejigl0vae6vr1cta4320oyaqqm'>
+            <connection class='textscan' directory='C:/Users/polic/Documents/Repository personale di Tableau Prep/Origini dati' filename='MatchesCups - Copia.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Nomi campo Pivot' />
+            <column datatype='string' name='Valori campo pivot' />
+          </columns>
+          <tag name='Nomi campo Pivot'>
+            <value name='[Penalties loser]' />
+            <value name='[Penalties winner]' />
+          </tag>
+          <groups>
+            <group name='Valori campo pivot'>
+              <field name='[MatchesCups - Copia.csv].[Penalties loser]' />
+              <field name='[MatchesCups - Copia.csv].[Penalties winner]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0zejigl0vae6vr1cta4320oyaqqm' name='MatchesCups - Copia.csv' table='[MatchesCups - Copia#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='string' name='Winner' ordinal='2' />
+              <column datatype='string' name='Runners-Up' ordinal='3' />
+              <column datatype='string' name='Third' ordinal='4' />
+              <column datatype='string' name='Fourth' ordinal='5' />
+              <column datatype='integer' name='GoalsScored' ordinal='6' />
+              <column datatype='integer' name='QualifiedTeams' ordinal='7' />
+              <column datatype='integer' name='MatchesPlayed' ordinal='8' />
+              <column datatype='integer' name='Attendance' ordinal='9' />
+              <column datatype='string' name='Datetime' ordinal='10' />
+              <column datatype='integer' name='Year-1' ordinal='11' />
+              <column datatype='string' name='Month' ordinal='12' />
+              <column datatype='datetime' name='Hour' ordinal='13' />
+              <column datatype='integer' name='Day' ordinal='14' />
+              <column datatype='string' name='Stage' ordinal='15' />
+              <column datatype='string' name='Stadium' ordinal='16' />
+              <column datatype='string' name='City' ordinal='17' />
+              <column datatype='string' name='Home Team Name' ordinal='18' />
+              <column datatype='integer' name='Home Team Goals' ordinal='19' />
+              <column datatype='integer' name='Away Team Goals' ordinal='20' />
+              <column datatype='string' name='Away Team Name' ordinal='21' />
+              <column datatype='string' name='Match Winner' ordinal='22' />
+              <column datatype='integer' name='Win goals' ordinal='23' />
+              <column datatype='string' name='Loser' ordinal='24' />
+              <column datatype='string' name='Win at home' ordinal='25' />
+              <column datatype='string' name='Match at home' ordinal='26' />
+              <column datatype='string' name='Draw' ordinal='27' />
+              <column datatype='string' name='Win conditions' ordinal='28' />
+              <column datatype='string' name='Penalties' ordinal='29' />
+              <column datatype='string' name='Penalties winner' ordinal='30' />
+              <column datatype='string' name='Penalties loser' ordinal='31' />
+              <column datatype='string' name='Extra-time' ordinal='32' />
+              <column datatype='string' name='Golden Goal' ordinal='33' />
+              <column datatype='integer' name='Attendance-1' ordinal='34' />
+              <column datatype='integer' name='Half-time Home Goals' ordinal='35' />
+              <column datatype='integer' name='Half-time Away Goals' ordinal='36' />
+              <column datatype='string' name='Referee' ordinal='37' />
+              <column datatype='string' name='Assistant 1' ordinal='38' />
+              <column datatype='string' name='Assistant 2' ordinal='39' />
+              <column datatype='integer' name='RoundID' ordinal='40' />
+              <column datatype='integer' name='MatchID' ordinal='41' />
+              <column datatype='string' name='Home Team Initials' ordinal='42' />
+              <column datatype='string' name='Away Team Initials' ordinal='43' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Nomi campo Pivot' />
+            <column datatype='string' name='Valori campo pivot' />
+          </columns>
+          <tag name='Nomi campo Pivot'>
+            <value name='[Penalties loser]' />
+            <value name='[Penalties winner]' />
+          </tag>
+          <groups>
+            <group name='Valori campo pivot'>
+              <field name='[MatchesCups - Copia.csv].[Penalties loser]' />
+              <field name='[MatchesCups - Copia.csv].[Penalties winner]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0zejigl0vae6vr1cta4320oyaqqm' name='MatchesCups - Copia.csv' table='[MatchesCups - Copia#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='string' name='Winner' ordinal='2' />
+              <column datatype='string' name='Runners-Up' ordinal='3' />
+              <column datatype='string' name='Third' ordinal='4' />
+              <column datatype='string' name='Fourth' ordinal='5' />
+              <column datatype='integer' name='GoalsScored' ordinal='6' />
+              <column datatype='integer' name='QualifiedTeams' ordinal='7' />
+              <column datatype='integer' name='MatchesPlayed' ordinal='8' />
+              <column datatype='integer' name='Attendance' ordinal='9' />
+              <column datatype='string' name='Datetime' ordinal='10' />
+              <column datatype='integer' name='Year-1' ordinal='11' />
+              <column datatype='string' name='Month' ordinal='12' />
+              <column datatype='datetime' name='Hour' ordinal='13' />
+              <column datatype='integer' name='Day' ordinal='14' />
+              <column datatype='string' name='Stage' ordinal='15' />
+              <column datatype='string' name='Stadium' ordinal='16' />
+              <column datatype='string' name='City' ordinal='17' />
+              <column datatype='string' name='Home Team Name' ordinal='18' />
+              <column datatype='integer' name='Home Team Goals' ordinal='19' />
+              <column datatype='integer' name='Away Team Goals' ordinal='20' />
+              <column datatype='string' name='Away Team Name' ordinal='21' />
+              <column datatype='string' name='Match Winner' ordinal='22' />
+              <column datatype='integer' name='Win goals' ordinal='23' />
+              <column datatype='string' name='Loser' ordinal='24' />
+              <column datatype='string' name='Win at home' ordinal='25' />
+              <column datatype='string' name='Match at home' ordinal='26' />
+              <column datatype='string' name='Draw' ordinal='27' />
+              <column datatype='string' name='Win conditions' ordinal='28' />
+              <column datatype='string' name='Penalties' ordinal='29' />
+              <column datatype='string' name='Penalties winner' ordinal='30' />
+              <column datatype='string' name='Penalties loser' ordinal='31' />
+              <column datatype='string' name='Extra-time' ordinal='32' />
+              <column datatype='string' name='Golden Goal' ordinal='33' />
+              <column datatype='integer' name='Attendance-1' ordinal='34' />
+              <column datatype='integer' name='Half-time Home Goals' ordinal='35' />
+              <column datatype='integer' name='Half-time Away Goals' ordinal='36' />
+              <column datatype='string' name='Referee' ordinal='37' />
+              <column datatype='string' name='Assistant 1' ordinal='38' />
+              <column datatype='string' name='Assistant 2' ordinal='39' />
+              <column datatype='integer' name='RoundID' ordinal='40' />
+              <column datatype='integer' name='MatchID' ordinal='41' />
+              <column datatype='string' name='Home Team Initials' ordinal='42' />
+              <column datatype='string' name='Away Team Initials' ordinal='43' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;it&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;it_IT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Winner]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Winner</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Runners-Up</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Runners-Up]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Runners-Up</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Third</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Third]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Third</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fourth</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fourth]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Fourth</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GoalsScored</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GoalsScored]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>GoalsScored</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QualifiedTeams</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QualifiedTeams]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>QualifiedTeams</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MatchesPlayed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MatchesPlayed]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>MatchesPlayed</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attendance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Attendance]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Attendance</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Datetime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Datetime]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Datetime</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year-1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year-1]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Year-1</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Hour]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Hour</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Day</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stage]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Stage</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stadium</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stadium]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Stadium</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Home Team Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Home Team Name]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Home Team Name</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Home Team Goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Home Team Goals]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Home Team Goals</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Away Team Goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Away Team Goals]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Away Team Goals</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Away Team Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Away Team Name]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Away Team Name</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Match Winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Match Winner]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Match Winner</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Win goals]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Win goals</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loser</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Loser]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Loser</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win at home</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Win at home]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Win at home</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Match at home</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Match at home]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Match at home</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Draw</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Draw]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Draw</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win conditions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Win conditions]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Win conditions</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Penalties</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Penalties]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Penalties</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Extra-time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Extra-time]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Extra-time</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Golden Goal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Golden Goal]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Golden Goal</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attendance-1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Attendance-1]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Attendance-1</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Half-time Home Goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Half-time Home Goals]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Half-time Home Goals</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Half-time Away Goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Half-time Away Goals]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Half-time Away Goals</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Referee</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Referee]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Referee</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Assistant 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Assistant 1]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Assistant 1</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Assistant 2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Assistant 2]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Assistant 2</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RoundID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RoundID]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>RoundID</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MatchID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MatchID]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>MatchID</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Home Team Initials</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Home Team Initials]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Home Team Initials</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Away Team Initials</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Away Team Initials]</local-name>
+            <parent-name>[MatchesCups - Copia.csv]</parent-name>
+            <remote-alias>Away Team Initials</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nomi campo Pivot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nomi campo Pivot]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Nomi campo Pivot</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Valori campo pivot</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Valori campo pivot]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Valori campo pivot</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='SUM([Win goals])/COUNT([Match Winner])' datatype='real' name='[Calculation_547468839694610432]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Win goals])/COUNT([Match Winner])' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Day]' role='dimension' type='quantitative' />
+      <column caption='Goals Scored' datatype='integer' name='[GoalsScored]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Match at home]' role='dimension' type='nominal' />
+      <column caption='Match ID' datatype='integer' name='[MatchID]' role='dimension' type='ordinal' />
+      <column caption='Matches Played' datatype='integer' name='[MatchesPlayed]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Nomi campo Pivot]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Penalties loser&quot;' value='Perse' />
+          <alias key='&quot;Penalties winner&quot;' value='Vinte' />
+        </aliases>
+      </column>
+      <column caption='Qualified Teams' datatype='integer' name='[QualifiedTeams]' role='measure' type='quantitative' />
+      <column caption='Round ID' datatype='integer' name='[RoundID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Win at home]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;NO&quot;' value='Fuori casa' />
+          <alias key='&quot;YES&quot;' value='In casa' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Year-1]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='MatchesCups - Copia.csv' datatype='table' name='[__tableau_internal_object_id__].[MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701]' role='measure' type='quantitative' />
+      <column-instance column='[Match at home]' derivation='None' name='[none:Match at home:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Nomi campo Pivot]' derivation='None' name='[none:Nomi campo Pivot:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Win at home]' derivation='None' name='[none:Win at home:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='Country, City'>
+          <field>[Country]</field>
+          <field>[City]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Match at home:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;NO&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;YES&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Win at home:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;YES&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NO&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Nomi campo Pivot:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Penalties winner&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Penalties loser&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Italy&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='MatchesCups - Copia.csv' id='MatchesCups - Copia.csv_4DA186F38379456E930F54C727787701'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Nomi campo Pivot' />
+                  <column datatype='string' name='Valori campo pivot' />
+                </columns>
+                <tag name='Nomi campo Pivot'>
+                  <value name='[Penalties loser]' />
+                  <value name='[Penalties winner]' />
+                </tag>
+                <groups>
+                  <group name='Valori campo pivot'>
+                    <field name='[MatchesCups - Copia.csv].[Penalties loser]' />
+                    <field name='[MatchesCups - Copia.csv].[Penalties winner]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0zejigl0vae6vr1cta4320oyaqqm' name='MatchesCups - Copia.csv' table='[MatchesCups - Copia#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+                    <column datatype='integer' name='Year' ordinal='0' />
+                    <column datatype='string' name='Country' ordinal='1' />
+                    <column datatype='string' name='Winner' ordinal='2' />
+                    <column datatype='string' name='Runners-Up' ordinal='3' />
+                    <column datatype='string' name='Third' ordinal='4' />
+                    <column datatype='string' name='Fourth' ordinal='5' />
+                    <column datatype='integer' name='GoalsScored' ordinal='6' />
+                    <column datatype='integer' name='QualifiedTeams' ordinal='7' />
+                    <column datatype='integer' name='MatchesPlayed' ordinal='8' />
+                    <column datatype='integer' name='Attendance' ordinal='9' />
+                    <column datatype='string' name='Datetime' ordinal='10' />
+                    <column datatype='integer' name='Year-1' ordinal='11' />
+                    <column datatype='string' name='Month' ordinal='12' />
+                    <column datatype='datetime' name='Hour' ordinal='13' />
+                    <column datatype='integer' name='Day' ordinal='14' />
+                    <column datatype='string' name='Stage' ordinal='15' />
+                    <column datatype='string' name='Stadium' ordinal='16' />
+                    <column datatype='string' name='City' ordinal='17' />
+                    <column datatype='string' name='Home Team Name' ordinal='18' />
+                    <column datatype='integer' name='Home Team Goals' ordinal='19' />
+                    <column datatype='integer' name='Away Team Goals' ordinal='20' />
+                    <column datatype='string' name='Away Team Name' ordinal='21' />
+                    <column datatype='string' name='Match Winner' ordinal='22' />
+                    <column datatype='integer' name='Win goals' ordinal='23' />
+                    <column datatype='string' name='Loser' ordinal='24' />
+                    <column datatype='string' name='Win at home' ordinal='25' />
+                    <column datatype='string' name='Match at home' ordinal='26' />
+                    <column datatype='string' name='Draw' ordinal='27' />
+                    <column datatype='string' name='Win conditions' ordinal='28' />
+                    <column datatype='string' name='Penalties' ordinal='29' />
+                    <column datatype='string' name='Penalties winner' ordinal='30' />
+                    <column datatype='string' name='Penalties loser' ordinal='31' />
+                    <column datatype='string' name='Extra-time' ordinal='32' />
+                    <column datatype='string' name='Golden Goal' ordinal='33' />
+                    <column datatype='integer' name='Attendance-1' ordinal='34' />
+                    <column datatype='integer' name='Half-time Home Goals' ordinal='35' />
+                    <column datatype='integer' name='Half-time Away Goals' ordinal='36' />
+                    <column datatype='string' name='Referee' ordinal='37' />
+                    <column datatype='string' name='Assistant 1' ordinal='38' />
+                    <column datatype='string' name='Assistant 2' ordinal='39' />
+                    <column datatype='integer' name='RoundID' ordinal='40' />
+                    <column datatype='integer' name='MatchID' ordinal='41' />
+                    <column datatype='string' name='Home Team Initials' ordinal='42' />
+                    <column datatype='string' name='Away Team Initials' ordinal='43' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Home Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Goal per partita giocando il Mondiale in casa ed in trasferta</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MatchesCups - Copia' name='federated.1snuspl1qcl25q183ap910uof80g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1snuspl1qcl25q183ap910uof80g'>
+            <column caption='SUM([Win goals])/COUNT([Match Winner])' datatype='real' name='[Calculation_547468839694610432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Win goals])/COUNT([Match Winner])' />
+            </column>
+            <column datatype='string' name='[Match Winner]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Win at home]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;NO&quot;' value='Fuori casa' />
+                <alias key='&quot;YES&quot;' value='In casa' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Win goals]' role='measure' type='quantitative' />
+            <column-instance column='[Match Winner]' derivation='None' name='[none:Match Winner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Win at home]' derivation='None' name='[none:Win at home:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_547468839694610432]' derivation='User' name='[usr:Calculation_547468839694610432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1snuspl1qcl25q183ap910uof80g].[none:Match Winner:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;Argentina&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;Brazil&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;Chile&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;England&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;Italy&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;Mexico&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;South Africa&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;Spain&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;Sweden&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;Switzerland&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;Uruguay&quot;' />
+              <groupfilter function='member' level='[none:Match Winner:nk]' member='&quot;USA&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1snuspl1qcl25q183ap910uof80g].[none:Match Winner:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1snuspl1qcl25q183ap910uof80g].[none:Match Winner:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk]' scope='cols' value='false' />
+            <format attr='title' class='0' field='[federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk]' scope='cols' value='Goal / Partita' />
+            <encoding attr='space' class='0' field='[federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk]' field-type='quantitative' max='4.0' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='height' field='[federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk]' value='71' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1snuspl1qcl25q183ap910uof80g].[none:Match Winner:nk]' value='20' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1snuspl1qcl25q183ap910uof80g].[none:Win at home:nk]' value='TIPO VITTORIA'>
+              <formatted-text>
+                <run>TIPO VITTORIA</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Goal a partita &lt;</run>
+                <run bold='true'>[federated.1snuspl1qcl25q183ap910uof80g].[none:Win at home:nk]</run>
+                <run bold='true'>&gt;: &lt;</run>
+                <run bold='true'>[federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <path column='[federated.1snuspl1qcl25q183ap910uof80g].[none:Win at home:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Goal a partita &lt;</run>
+                <run bold='true'>[federated.1snuspl1qcl25q183ap910uof80g].[none:Win at home:nk]</run>
+                <run bold='true'>&gt;: &lt;</run>
+                <run bold='true'>[federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1snuspl1qcl25q183ap910uof80g].[none:Win at home:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Goal a partita &lt;</run>
+                <run bold='true'>[federated.1snuspl1qcl25q183ap910uof80g].[none:Win at home:nk]</run>
+                <run bold='true'>&gt;: &lt;</run>
+                <run bold='true'>[federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1snuspl1qcl25q183ap910uof80g].[none:Match Winner:nk]</rows>
+        <cols>([federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk] + [federated.1snuspl1qcl25q183ap910uof80g].[usr:Calculation_547468839694610432:qk])</cols>
+      </table>
+      <simple-id uuid='{9FE35E15-52F8-4F5E-B56A-62B56C404B89}' />
+    </worksheet>
+    <worksheet name='Penalties'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Partite finite ai rigori</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MatchesCups - Copia' name='federated.1snuspl1qcl25q183ap910uof80g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1snuspl1qcl25q183ap910uof80g'>
+            <column datatype='string' name='[Nomi campo Pivot]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Penalties loser&quot;' value='Perse' />
+                <alias key='&quot;Penalties winner&quot;' value='Vinte' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Penalties]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Valori campo pivot]' role='dimension' type='nominal' />
+            <column-instance column='[Nomi campo Pivot]' derivation='Attribute' name='[attr:Nomi campo Pivot:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Penalties]' derivation='Count' name='[cnt:Penalties:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Nomi campo Pivot]' derivation='None' name='[none:Nomi campo Pivot:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Penalties]' derivation='None' name='[none:Penalties:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Valori campo pivot]' derivation='None' name='[none:Valori campo pivot:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1snuspl1qcl25q183ap910uof80g].[none:Penalties:nk]'>
+            <groupfilter function='member' level='[none:Penalties:nk]' member='&quot;VERO&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1snuspl1qcl25q183ap910uof80g].[none:Valori campo pivot:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Valori campo pivot:nk]' />
+              <groupfilter function='member' level='[none:Valori campo pivot:nk]' member='&quot;Germany FR&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1snuspl1qcl25q183ap910uof80g].[none:Valori campo pivot:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1snuspl1qcl25q183ap910uof80g].[cnt:Penalties:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1snuspl1qcl25q183ap910uof80g].[none:Penalties:nk]</column>
+            <column>[federated.1snuspl1qcl25q183ap910uof80g].[none:Valori campo pivot:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1snuspl1qcl25q183ap910uof80g].[cnt:Penalties:qk]' scope='cols' value='Numero partite' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1snuspl1qcl25q183ap910uof80g].[none:Nomi campo Pivot:nk]' value='PARTITE AI RIGORI'>
+              <formatted-text>
+                <run>PARTITE AI RIGORI</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1snuspl1qcl25q183ap910uof80g].[none:Nomi campo Pivot:nk]' />
+              <tooltip column='[federated.1snuspl1qcl25q183ap910uof80g].[attr:Nomi campo Pivot:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#000000'>Partite &lt;</run>
+                <run fontcolor='#000000'>[federated.1snuspl1qcl25q183ap910uof80g].[none:Nomi campo Pivot:nk]</run>
+                <run fontcolor='#000000'>&gt; ai rigori: &lt;</run>
+                <run fontcolor='#000000'>[federated.1snuspl1qcl25q183ap910uof80g].[cnt:Penalties:qk]</run>
+                <run fontcolor='#000000'>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1snuspl1qcl25q183ap910uof80g].[none:Valori campo pivot:nk]</rows>
+        <cols>[federated.1snuspl1qcl25q183ap910uof80g].[cnt:Penalties:qk]</cols>
+      </table>
+      <simple-id uuid='{470955A0-E226-4CCA-8817-8F0E055B6D32}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' name='Home Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='2' param='[federated.1snuspl1qcl25q183ap910uof80g].[none:Win at home:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1snuspl1qcl25q183ap910uof80g].[none:Match Winner:nk]</field>
+            <field>[federated.1snuspl1qcl25q183ap910uof80g].[none:Match at home:nk]</field>
+            <field>[federated.1snuspl1qcl25q183ap910uof80g].[none:Win at home:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FF1D552D-964A-47FE-91BC-48362FDC3702}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Penalties'>
+      <cards>
+        <edge name='left'>
+          <strip size='367'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='0' param='[federated.1snuspl1qcl25q183ap910uof80g].[none:Nomi campo Pivot:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1snuspl1qcl25q183ap910uof80g].[none:Nomi campo Pivot:nk]</field>
+            <field>[federated.1snuspl1qcl25q183ap910uof80g].[none:Penalties:nk]</field>
+            <field>[federated.1snuspl1qcl25q183ap910uof80g].[none:Valori campo pivot:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2DA2BCFC-9468-40B6-A19C-135587F3821A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Home Rate' width='192'>
+      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
+      A3eo8olPDQ/mAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Penalties' width='192'>
+      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
+      jEVioFkW0gAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
